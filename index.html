@@ -1,0 +1,404 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" href="asset/icon.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@waritocomatta">
+  <meta name="twitter:creator" content="@waritocomatta">
+  <meta property="og:title" content="IoT Device and Server Side in JavaScript programming.｜Motone Adachi｜@waritocomatta">
+  <meta property="og:description" content="Moddable SDK and Node.js http Server.">
+  <!-- meta property="og:image" content="https://.netlify.com/asset/thumbnail.png" -->
+  <title>IoT Device and Server Side in JavaScript programming.｜Motone Adachi｜@waritocomatta</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+</head>
+<body>
+<div class="reveal">
+  <div id="fluffyLogo">
+    <div class="logo">
+      <span>Kirirom Institute</span>
+      <img src="asset/logo.svg">
+      <span>of Technology</span>
+    </div>
+    <div class="logo">
+      <img src="asset/logo.svg">
+      <span>@waritocomatta</span>
+    </div>
+    <div class="logo">
+      <img src="asset/logo.svg">
+    </div>
+    <div class="logo">
+      <span>MOTONE</span>
+      <img src="asset/logo.svg">
+      <span>ADACHI</span>
+    </div>
+    <div class="logo">
+      <span>足立</span>
+      <img src="asset/logo.svg">
+      <span>素音</span>
+    </div>
+  </div>
+  <div class="inside-shadow-layer"></div>
+  <div id="solid-animation"></div>
+  <div id="check-animation"></div>
+  <div class="slides">
+    <section data-background-transition="zoom" style="filter: drop-shadow(1px 1px 8px #000000);">
+      <section data-background="#eae264">
+        <div id="scrollArea" class="fragment">
+          <table id="fontStatus" style="font-size: 1em;font-family: '851H-kktt_004';background-color: rgba(255,255,255,0.35);"></table>
+        </div>
+      </section>
+      <section data-background="#f1f2f6" data-background-transition="zoom" style="filter: drop-shadow(30px 30px 2px #000000);">
+        <table style="color: #f7f1e3; font-size: 0.8em;font-family: 'GenEiAntique_v4';background-color: rgba(0,0,0,0.40);">
+          <tr>
+            <td style="font-size: 1.2em;">
+              About this LT.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              A lot of Japanese text and English text in this slide. 
+              Because, This slide made for LT (Lightning Talk) party in Japan.
+              And, This slide made for Kirirom Institute of Technology members. ( Cambodia University )
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 1.2em;">
+              このスライドについて
+            </td>
+          </tr>
+          <tr>
+            <td>
+              このスライドには日本語のテキストと英語のテキストがたくさんあります。なぜなら、このスライドは日本のLT（Lightning Talk）パーティーのために作られたものです。そして、このスライドはKirirom工科大学のメンバーのために作られました。 （カンボジア大学）
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section data-background="#f1f2f6" data-background-transition="zoom" style="filter: drop-shadow(30px 30px 2px #000000);">
+        <table style="color: #f7f1e3; font-size: 0.8em;font-family: 'GenEiAntique_v4';background-color: rgba(0,0,0,0.40);">
+          <tr>
+            <td>
+              <a href="./asset/bot-qr.png" target="_blank"><img src="./asset/bot-qr.png"></a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              You can add LINE Bot to your LINE friend list By using this QR code.<br>
+              When you send to message to this LINE Bot, your message shown on this slide.
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section data-background="#d35400" data-background-transition="zoom" style="filter: drop-shadow(30px 30px 2px #000000);">
+        <p id="titleStyle" style='font-family: "851H-kktt_004";'>
+          IoT Device and<br>
+          Server Side<br>
+          in JavaScript<br>
+          programming.
+        </p>
+      </section>
+    </section>
+    <section data-background-transition="zoom" style="filter: drop-shadow(30px 30px 2px #000000);">
+      <section data-background="#622d18">
+        <p id="profileStyle">
+          Who am I ?
+        </p>
+      </section>
+      <section data-background="#622d18">
+        <table style="color: #f7f1e3; font-size: 0.8em;font-family: 'GenEiAntique_v4';background-color: rgba(0,0,0,0.40);">
+          <tr>
+            <td style="font-size: 1.2em;">
+              Motone Adachi ( waricoma )
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 1.2em;">
+              わりとこまった (I was in trouble so so.) → waritocomatta → waricoma<br>
+              (Please call me waricoma. 👍)
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 1.2em;">
+              Programmer (Node.js C++ Ruby PHP...)<br>
+              <a href="https://www.resume.id/waricoma" target="_blank">more info</a> (I like Web technology.)
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size: 1.2em;">
+              N High School (~ 03/2019)<br>
+              → Kirirom Institute of Technology (~ 04/2019)
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section data-background="#622d18">
+        <table style="color: #222222; font-size: 0.8em;font-family: 'GenEiAntique_v4';background-color: rgba(255,255,255,0.40);">
+          <tr>
+            <td style="font-size: 1.2em;" colspan="2">
+              <span style="color: #1f286f">KADOKAWA DWANGO N High School</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Place
+            </td>
+            <td>
+              Okinawa 🇯🇵
+            </td>
+          </tr>
+          <tr>
+            <td>
+              OPEN
+            </td>
+            <td>
+              2016~
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Background company
+            </td>
+            <td>
+              KADOKAWA and Dwango (Publishing, Film, Music, Goods, Event, Game, IT,<span style="font-size: 1.2em;">NicoNico</span> Video ...etc)
+            </td>
+          </tr>
+          <tr>
+            <td style="white-space: nowrap;">
+              Students total
+            </td>
+            <td>
+              9792 (going to be 10000 or more at 07/2019)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Price
+            </td>
+            <td>
+              ¥68700/year
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              Programming, English, Start up business club (started EasyGO inc), Chinese, Illustrator, Voice actor, Game, Agriculture, Writer, Fashion ..etc
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section data-background="#622d18">
+        <table style="color: #222222; font-size: 0.8em;font-family: 'GenEiAntique_v4';background-color: rgba(255,255,255,0.40);">
+          <tr>
+            <td style="font-size: 1.2em;" colspan="2">
+              <span style="color: #1f286f">KADOKAWA DWANGO N High School</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              Where does OBOG go to school and company?
+            </td>
+          </tr>
+          <tr>
+            <td>
+              慶應義塾大学｜早稲田大学｜筑波大学｜上智大学｜東京理科大学｜東京工業大学｜青山学院大学｜明治大学｜立教大学｜Kirirom Institute of Technology ~ キリロム工科大学 ...etc
+            </td>
+            <td>
+              ANA｜JTBエンタテインメント｜KIDS COMPANY｜グリー株式会社｜マネーフォーワード株式会社｜航空自衛隊 自衛官候補生｜公務員（東京都特別採用枠）｜TBCグループ株式会社 ...etc
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section data-background="#622d18">
+        <blockquote class="twitter-tweet" data-lang="en-gb"><p lang="ja" dir="ltr">【<a href="https://twitter.com/hashtag/%E8%B6%85%E4%BC%9A%E8%AD%B02019?src=hash&amp;ref_src=twsrc%5Etfw">#超会議2019</a>】<a href="https://twitter.com/hashtag/N%E9%AB%98%E6%96%87%E5%8C%96%E7%A5%AD?src=hash&amp;ref_src=twsrc%5Etfw">#N高文化祭</a> の実行委員長と副委員長の二人が、新元号「令和」を発表したことで記憶に新しい、菅官房長官と一緒に写真を撮りました📸<br>貴重な体験です！<a href="https://twitter.com/hashtag/%E4%BB%A4%E5%92%8C?src=hash&amp;ref_src=twsrc%5Etfw">#令和</a> <a href="https://t.co/sPjdqy6CaD">pic.twitter.com/sPjdqy6CaD</a></p>&mdash; Ｎ高等学校（学校法人角川ドワンゴ学園） (@nhigh_info) <a href="https://twitter.com/nhigh_info/status/1122341592478564352?ref_src=twsrc%5Etfw">28 April 2019</a></blockquote>
+      </section>
+      <section data-background="#622d18">
+        <table style="color: #222222; font-size: 0.8em;font-family: 'GenEiAntique_v4';background-color: rgba(255,255,255,0.40);">
+          <tr>
+            <td style="font-size: 1.2em;" colspan="2">
+              <span style="color: #b71638; white-space: nowrap;">Kirirom Institute of Technology ~ キリロム工科大学</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Place
+            </td>
+            <td>
+              Kirirom 🇰🇭
+            </td>
+          </tr>
+          <tr>
+            <td>
+              OPEN
+            </td>
+            <td>
+              2014~
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Background company
+            </td>
+            <td>
+              A2A (vKirirom Pine Resort, Real estate development ...etc)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Students total
+            </td>
+            <td>
+              33 (Japanese)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Price
+            </td>
+            <td>
+              All KIT students is scholarship student. (Maybe Free)
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              Programming, English, Virtual Company ...etc
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section data-background="#622d18">
+        <table>
+          <tr>
+            <td>
+              <blockquote class="twitter-tweet" data-conversation="none" data-lang="en-gb"><p lang="ja" dir="ltr">(今まで写真撮影NGだと思ってたんだけどOKだったらしい！今日最終日で今更なんだけど、どんどん写真撮るよ😊)<a href="https://twitter.com/hashtag/HoloLens?src=hash&amp;ref_src=twsrc%5Etfw">#HoloLens</a> エンジニアのスーパー高校たち！<br>The teenagers are developing a HoloLens app at Microsoft Japan office <a href="https://t.co/VvCSTAOP7e">pic.twitter.com/VvCSTAOP7e</a></p>&mdash; ちょまど 🇺🇸4/27(土)-5/8(水)米国なう (@chomado) <a href="https://twitter.com/chomado/status/1015112156256190464?ref_src=twsrc%5Etfw">6 July 2018</a></blockquote>
+            </td>
+            <td>
+              Hackathon in Microsoft 
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section data-background="#622d18">
+        <table>
+          <tr>
+            <td>
+              <blockquote class="twitter-tweet" data-conversation="none" data-lang="en-gb"><p lang="ja" dir="ltr">おめっふ！！ <a href="https://t.co/RSIueVLGDQ">pic.twitter.com/RSIueVLGDQ</a></p>&mdash; たかーぎ｜高木俊輔 (@takagi_1129) <a href="https://twitter.com/takagi_1129/status/1091692985098547201?ref_src=twsrc%5Etfw">2 February 2019</a></blockquote>  
+            </td>
+            <td>
+              We got TOP2.<br>Hackathon in Cookpad 
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section data-background="#622d18">
+        <table>
+          <tr>
+            <td>
+              <img src="./asset/yahoo.png">
+            </td>
+            <td>
+              Hackathon in Yahoo 
+            </td>
+          </tr>
+        </table>
+      </section>
+    </section>
+    <section data-background="#222222">
+      <section data-background="#222222">
+        <table style="color: #222222; font-size: 0.8em;font-family: 'GenEiAntique_v4';background-color: rgba(255,255,255,0.40);">
+          <tr>
+            <td style="font-size: 1.2em;">
+              Works 18/04(KIT Entrance ceremony) ~ 22/04
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://github.com/waricoma/KIT-dome-door-notify" target="_blank">https://github.com/waricoma/KIT-dome-door-notify</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Hospitality Management students uniform 3D Model. (using VRoid)
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section data-background="#222222">
+        Using Raspberry Pi?
+      </section>
+      <section data-background="#222222">
+        No 🙅
+      </section>
+      <section data-background="#222222">
+        Using Arduino Board?
+      </section>
+      <section data-background="#222222">
+        No 🙅
+      </section>
+      <section data-background="#222222">
+        Using <a href="https://en.wikipedia.org/wiki/ESP8266" target="_blank">ESP8266</a>?
+      </section>
+      <section data-background="#222222">
+        Yes 👍
+      </section>
+      <section data-background="#222222">
+        It's micro computer with wifi module.<br>
+        Low cost, Low energy, Small size ♪<br>
+        (1 chip: $3.5)
+      </section>
+      <section data-background="#222222">
+        Using Arduino IDE and C like lang?
+      </section>
+      <section data-background="#222222">
+        No 🙅
+      </section>
+      <section data-background="#222222">
+        Using <a href="https://github.com/Moddable-OpenSource/moddable" target="_blank">Moddable SDK</a>
+      </section>
+      <section data-background="#222222">
+        Yes 👍
+      </section>
+      <section data-background="#222222">
+        You can use JavaScript on ESP8266 and ESP32 and other by Moddable.<br>
+        There is device emulator for Mac, Linux, Windows with Moddable. 🎉
+      </section>
+      <section data-background="#222222">
+        Server side
+      </section>
+      <section data-background="#222222">
+        Node.js 🤝
+      </section>
+      <section data-background="#222222">
+        You can do JavaScript only programming on Iot project.<br>
+        So happy ♪
+      </section>
+      <section data-background="#222222">
+        <table>
+          <tr>
+            <td>
+              <blockquote class="twitter-tweet" data-lang="en-gb"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/%E3%82%AD%E3%83%AA%E3%83%AD%E3%83%A0%E5%B7%A5%E7%A7%91%E5%A4%A7%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#キリロム工科大学</a> ( カンボジア ) での初めての作品が完成💪<br>( といっても今日が入学式だけど! )<br><br>寮などのドアの開閉をSlackへ通知してくれます📨<br><br>普段はFlowJSを使うけど今回はnormalなNode.jsとModdableで作りました✌<br><br>MIT license → <a href="https://t.co/n9cq6GXfLb">https://t.co/n9cq6GXfLb</a> <a href="https://t.co/AHCMSnC77j">pic.twitter.com/AHCMSnC77j</a></p>&mdash; waricoma💤 (@waritocomatta) <a href="https://twitter.com/waritocomatta/status/1118897404537794565?ref_src=twsrc%5Etfw">18 April 2019</a></blockquote>
+            </td>
+            <td>
+              Demo movie
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section data-background="#222222">
+        I want to develop more code for KIT. 💪
+      </section>
+    </section>
+    <section data-background-transition="zoom" data-background="#1B1464">
+      <h1 id="thanksStyle">
+        Thank you for listening. 👋
+        <br>
+        m(_ _ )m <span style="font-family: 'PixelMplus12-Regular'">ﾍﾟｸﾘ</span>
+      </h1>
+    </section>
+  </div>
+</div>
+<script src="js/reveal.js"></script>
+<script src="js/main.js"></script>
+<script src="https://embed.small.chat/T32N53BHDGBQ3Y05HP.js" async=""></script>
+</body>
+</html>
