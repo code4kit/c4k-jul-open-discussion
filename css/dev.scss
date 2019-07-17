@@ -14,6 +14,7 @@
   text-align: center;
   img {
     // filter: grayscale(100%);
+    border-radius: 50% 50% 50% 50%;
   }
   span {
     font-family: "PixelMplus12-Regular";
@@ -22,7 +23,7 @@
   }
 }
 
-#scrollArea {
+.scroll-area {
   overflow-y: scroll;
   height: 100vh;
 }
@@ -81,12 +82,19 @@
   left: 0;
   width: 100%;
   height: 100%;
-  border: solid #b33939cc 15px;
+  border: solid #b63739cc 15px;
   transform-origin: 50% 50%;
   box-sizing: border-box;
   animation: solid-animation 150s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+}
+
+#pixi {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 @keyframes solid-animation {
@@ -114,7 +122,7 @@
   left: 50%;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(45deg, #ff3f34a6 25%, transparent 25%, transparent 75%, #ff3f34a6 75%, #ff3f34a6), linear-gradient(-45deg, #ff3f34a6 25%, transparent 25%, transparent 75%, #ff3f34a6 75%, #ff3f34a6);
+  background-image: linear-gradient(45deg, #2c3e50a6 25%, transparent 25%, transparent 75%, #2c3e50a6 75%, #2c3e50a6), linear-gradient(-45deg, #2c3e50a6 25%, transparent 25%, transparent 75%, #2c3e50a6 75%, #2c3e50a6);
   background-size: 50px 50px;
   transform-origin: 0 0;
   animation: check-animation 300s;
@@ -177,8 +185,9 @@ iframe {
 }
 
 #titleStyle {
-  font-family: 'GLT-GonunneObsolete';
+  /* font-family: 'GLT-GonunneObsolete'; */
   font-size: 2em;
+  color: #ecf0f1;
   background-color: black;
   border: solid;
   position: relative;
@@ -189,9 +198,10 @@ iframe {
 
 #profileStyle {
   position: absolute;
-  font-family: 'GLT-GonunneObsolete';
-  background-color: black;
+  /* font-family: 'GLT-GonunneObsolete'; */
+  color: #ecf0f1;
   border: solid;
+  background-color: black;
   animation: title 1ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -248,7 +258,7 @@ iframe {
 
 #pointStyle {
   position: absolute;
-  font-family: 'GLT-GonunneObsolete';
+  /* font-family: 'GLT-GonunneObsolete'; */
   background-color: black;
   border: solid;
   animation: title 1ms;
