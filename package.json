@@ -1,0 +1,63 @@
+{
+  "name": "c4k-slides",
+  "version": "1.0.0",
+  "description": "c4k-slides",
+  "main": "./src/index.js",
+  "author": "code4kit",
+  "contributors": [
+    "waricoma"
+  ],
+  "license": "MIT",
+  "engines": {
+    "yarn": ">=1.19.1",
+    "node": ">=12.11.1"
+  },
+  "homepage": "https://github.com/code4kit/c4k-slides#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code4kit/c4k-slides.git"
+  },
+  "bugs": {
+    "url": "https://github.com/code4kit/c4k-slides/issues"
+  },
+  "scripts": {
+    "start": "node ./src/index.js",
+    "commit": "git cz",
+    "standard": "semistandard --fix",
+    "document": "documentation build -f md ./src/ | add-text-to-markdown ./DOCUMENT.md --section 'DocumentationJS' --write",
+    "readme": "npx readme-md-generator",
+    "test": "kocha ./test"
+  },
+  "dependencies": {
+    "@slack/rtm-api": "^5.0.3",
+    "dotenv": "^8.2.0",
+    "node-static": "^0.7.11",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "add-text-to-markdown": "^2.0.0",
+    "commitizen": "^4.0.3",
+    "cz-emoji": "^1.1.2",
+    "documentation": "^12.1.4",
+    "kocha": "^1.9.1",
+    "readme-md-generator": "^1.0.0",
+    "semistandard": "^14.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-emoji"
+    }
+  },
+  "semistandard": {
+    "global": [
+      "$",
+      "nicoscreen",
+      "io"
+    ],
+    "ignore": [
+      "nicoscreen.js",
+      "impress.js",
+      "pointer.js"
+    ]
+  }
+}
