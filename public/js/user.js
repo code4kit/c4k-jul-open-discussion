@@ -16,9 +16,11 @@ $('.title').glitch({
   vshift: 25
 });
 
+/*
 $('.slider').slick({
   centerMode: true
 });
+*/
 
 $(window).resize(() => {
   $('#nicoscreen').width(window.innerWidth);

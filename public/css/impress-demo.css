@@ -49,6 +49,11 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
+.marker-green {
+    border-radius: 15%;
+    background-color: rgba(100, 255, 100, 0.8);
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
