@@ -48,3 +48,13 @@ socket.on('connect', () => {
 socket.on('message', (msg) => {
   nicoscreen.add(msg);
 });
+
+const firstWhSize = window.innerWidth;
+
+setInterval(() => {
+  for (const comment of $('#nicoscreen div')) {
+    if (firstWhSize === parseFloat($(comment).css('left').replace(/-|px/g, ''))) {
+      $(comment).remove();
+    }
+  }
+}, 5000);
